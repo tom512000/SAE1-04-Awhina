@@ -1,0 +1,17 @@
+Environ 12 entités :
+
+(Client) : idClt -> nomClt, pnomClt, adClt, CPClt, villeClt, telClt, emailClt
+(Dossier) : idDossier -> etatDossier, datePrv, dateDem, 
+- (Agent Commercial) : idAgent -> 
+- (Responsable d'agence) : idResponsable -> 
+(Prendre rendez-vous) : idClient, idAgent -> dateVis, volumeMob, conditionAcces, formule, coût
+(Véhicule) idVehicule -> adVhc, CPVhc, villeVhc
+(Visite) : idVisite -> 
+- (Déménageur) : idDmg -> nbDmg (>= 10), anneAncien (+3ans d'ancienneté), capacite
+(Décider) : idResponsable, idDossier -> nbVhc
+(Choisir) : idResponsable, idDossier, idDmg -> chefEquipe
+(Vérifier) : idAgent, idDossier -> (lorsqu’il s’occupe du dossier et visite les lieux à déménager et emménager vérifier la véracité des adresses transcrites dans le dossier et y associer obligatoirement des coordonnées GPS)
+
+- une table employé
+
+Sélectionne parmi les déménageurs ...
